@@ -1,0 +1,27 @@
+### Get request
+GET  http://localhost:8000
+
+### Post request
+POST http://localhost:8000
+Content-Type: application/json
+
+{
+            "id": "5",
+            "fName": "Sam",
+            "lName": "Budhathoki"
+        }
+
+#curl -X POST "http://localhost:8000" -H "Content-Type: application/json" -d `{ "id": "1", "fName": "Sam", "lName" : "Budhathoki" }`
+### Put request
+PUT http://localhost:8000/5
+Content-Type: application/json
+Authorization: 123jjaja
+
+{
+    "id": 5,
+    "fName": "Larry",
+    "lName": "Haha"
+}
+
+### Delete request
+DELETE  http://localhost:8000/1
